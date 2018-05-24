@@ -4,13 +4,19 @@
   </head>
   <body> 
 <form>
-<select id="mySelect">
-  <option>mentee 1</a></option>
-  <option>mentee 2</a></option>
-  <option>mentee 3</a></option>
-</select>
+  <form>
+  <input type="radio" name="gender" value="male" ><a href="https://kpraneethgupta.github.io/kpg1/"</a><br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other
+</form>
 <input type="button" onclick="removeOption()" value="Remove the selected option">
 </form> 
+<script>
+function removeOption() {
+    var x = document.getElementById("mySelect");
+    x.remove(x.selectedIndex);
+}
+</script>
 </body>
 </html>
    
