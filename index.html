@@ -1,0 +1,31 @@
+  <html>
+  <head>
+  <title>mentor list</title>
+  </head>
+  <body>
+  <form>
+     <input type="radio" name="MENTOR" value="mentee 1" checked> mentee 1<br>
+     <input type="radio" name="mentor" value="mentee 2"> mentee 2<br>
+     <input type="radio" name="mentor" value="mentee 3"> mentee 3
+     <input type="button" onclick="removeOption()" value="Remove the selected option">
+      <input type="button" onclick="myFunction()" value="Submit">
+  </form>
+  <script>
+function removeOption() {
+    var x = document.getElementById("mySelect");
+    x.remove(x.selectedIndex);
+}
+</script>
+<script>
+function myFunction() {
+    document.getElementById("frm1").submit();
+}
+</script>
+
+</body>
+</html>
+   
+   
+   
+   
+   
